@@ -102,11 +102,44 @@ const provinceData = {
         { name: '宁夏', url: 'http://jyt.nx.gov.cn/' },
         { name: '新疆', url: 'http://jyt.xinjiang.gov.cn/' },
         { name: '西藏', url: 'http://jyt.xizang.gov.cn/' }
+    ],
+    medical: [
+        { name: '北京', url: 'http://wjw.beijing.gov.cn/' },
+        { name: '上海', url: 'https://wsjkw.sh.gov.cn/' },
+        { name: '天津', url: 'http://wsjk.tj.gov.cn/' },
+        { name: '重庆', url: 'http://wsjkw.cq.gov.cn/' },
+        { name: '广东', url: 'http://wsjkw.gd.gov.cn/' },
+        { name: '江苏', url: 'http://wjw.jiangsu.gov.cn/' },
+        { name: '浙江', url: 'http://wsjkw.zj.gov.cn/' },
+        { name: '山东', url: 'http://wsjkw.shandong.gov.cn/' },
+        { name: '河南', url: 'http://wsjkw.henan.gov.cn/' },
+        { name: '四川', url: 'http://wsjkw.sc.gov.cn/' },
+        { name: '湖北', url: 'http://wjw.hubei.gov.cn/' },
+        { name: '湖南', url: 'http://wjw.hunan.gov.cn/' },
+        { name: '福建', url: 'http://wjw.fujian.gov.cn/' },
+        { name: '安徽', url: 'http://wjw.ah.gov.cn/' },
+        { name: '河北', url: 'http://wsjkw.hebei.gov.cn/' },
+        { name: '陕西', url: 'http://sxwjw.shaanxi.gov.cn/' },
+        { name: '山西', url: 'http://wjw.shanxi.gov.cn/' },
+        { name: '江西', url: 'http://hc.jiangxi.gov.cn/' },
+        { name: '辽宁', url: 'http://wsjk.ln.gov.cn/' },
+        { name: '吉林', url: 'http://wsjkw.jl.gov.cn/' },
+        { name: '黑龙江', url: 'http://wsjkw.hlj.gov.cn/' },
+        { name: '广西', url: 'http://wsjkw.gxzf.gov.cn/' },
+        { name: '云南', url: 'http://ynswjkw.yn.gov.cn/' },
+        { name: '贵州', url: 'http://wsjkw.guizhou.gov.cn/' },
+        { name: '海南', url: 'http://wst.hainan.gov.cn/' },
+        { name: '甘肃', url: 'http://wsjk.gansu.gov.cn/' },
+        { name: '青海', url: 'http://wsjkw.qinghai.gov.cn/' },
+        { name: '内蒙古', url: 'http://wjw.nmg.gov.cn/' },
+        { name: '宁夏', url: 'http://wsjkw.nx.gov.cn/' },
+        { name: '新疆', url: 'http://wjw.xinjiang.gov.cn/' },
+        { name: '西藏', url: 'http://wjkw.xizang.gov.cn/' }
     ]
 };
 
 // 初始化页面
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     initTime();
     initParticles();
     initTabs();
@@ -120,9 +153,9 @@ document.addEventListener('DOMContentLoaded', function() {
 function initTime() {
     function updateTime() {
         const now = new Date();
-        const options = { 
-            year: 'numeric', 
-            month: '2-digit', 
+        const options = {
+            year: 'numeric',
+            month: '2-digit',
             day: '2-digit',
             hour: '2-digit',
             minute: '2-digit',
@@ -139,7 +172,7 @@ function initTime() {
 function initParticles() {
     const container = document.getElementById('particles');
     const particleCount = 30;
-    
+
     for (let i = 0; i < particleCount; i++) {
         const particle = document.createElement('div');
         particle.className = 'particle';
@@ -155,15 +188,15 @@ function initParticles() {
 function initTabs() {
     const tabs = document.querySelectorAll('.category-tab');
     const panels = document.querySelectorAll('.panel');
-    
+
     tabs.forEach(tab => {
-        tab.addEventListener('click', function() {
+        tab.addEventListener('click', function () {
             const category = this.dataset.category;
-            
+
             // 更新标签状态
             tabs.forEach(t => t.classList.remove('active'));
             this.classList.add('active');
-            
+
             // 更新面板显示
             panels.forEach(p => p.classList.remove('active'));
             document.getElementById('panel-' + category).classList.add('active');
@@ -176,12 +209,13 @@ function initProvinceGrids() {
     renderProvinceGrid('civilProvinceGrid', provinceData.civil);
     renderProvinceGrid('publicProvinceGrid', provinceData.public);
     renderProvinceGrid('teacherProvinceGrid', provinceData.teacher);
+    renderProvinceGrid('medicalProvinceGrid', provinceData.medical);
 }
 
 function renderProvinceGrid(containerId, data) {
     const container = document.getElementById(containerId);
     if (!container) return;
-    
+
     container.innerHTML = data.map(province => `
         <a href="${province.url}" target="_blank" class="province-link" data-name="${province.name}">
             ${province.name}
@@ -193,20 +227,20 @@ function renderProvinceGrid(containerId, data) {
 function initSearch() {
     const searchInput = document.getElementById('searchInput');
     const filterTags = document.querySelectorAll('.filter-tag');
-    
+
     // 回车搜索
-    searchInput.addEventListener('keypress', function(e) {
+    searchInput.addEventListener('keypress', function (e) {
         if (e.key === 'Enter') {
             performSearch();
         }
     });
-    
+
     // 筛选标签
     filterTags.forEach(tag => {
-        tag.addEventListener('click', function() {
+        tag.addEventListener('click', function () {
             filterTags.forEach(t => t.classList.remove('active'));
             this.classList.add('active');
-            
+
             const filter = this.dataset.filter;
             applyFilter(filter);
         });
@@ -216,15 +250,15 @@ function initSearch() {
 function performSearch() {
     const query = document.getElementById('searchInput').value.trim().toLowerCase();
     if (!query) return;
-    
+
     // 搜索所有链接卡片和省份链接
     const allLinks = document.querySelectorAll('.link-card, .province-link');
     let foundCount = 0;
-    
+
     allLinks.forEach(link => {
         const text = link.textContent.toLowerCase();
         const matches = text.includes(query);
-        
+
         if (matches) {
             link.style.display = '';
             link.style.boxShadow = '0 0 20px rgba(99, 102, 241, 0.5)';
@@ -233,10 +267,10 @@ function performSearch() {
             link.style.display = 'none';
         }
     });
-    
+
     // 显示所有面板以便查看搜索结果
     document.querySelectorAll('.panel').forEach(p => p.classList.add('active'));
-    
+
     // 显示搜索结果提示
     showToast(`找到 ${foundCount} 个相关结果`);
 }
@@ -244,13 +278,13 @@ function performSearch() {
 function applyFilter(filter) {
     const tabs = document.querySelectorAll('.category-tab');
     const panels = document.querySelectorAll('.panel');
-    
+
     // 重置搜索状态
     document.querySelectorAll('.link-card, .province-link').forEach(link => {
         link.style.display = '';
         link.style.boxShadow = '';
     });
-    
+
     if (filter === 'all') {
         // 显示第一个面板
         panels.forEach((p, i) => p.classList.toggle('active', i === 0));
@@ -260,14 +294,15 @@ function applyFilter(filter) {
             'civil': 'civil',
             'public': 'public',
             'soe': 'soe',
-            'teacher': 'teacher'
+            'teacher': 'teacher',
+            'medical': 'medical'
         };
-        
+
         const category = categoryMap[filter];
         if (category) {
             panels.forEach(p => p.classList.remove('active'));
             document.getElementById('panel-' + category).classList.add('active');
-            
+
             tabs.forEach(t => {
                 t.classList.toggle('active', t.dataset.category === category);
             });
@@ -278,9 +313,9 @@ function applyFilter(filter) {
 // 收藏功能
 function initFavorites() {
     const fab = document.getElementById('favoriteFab');
-    
+
     fab.addEventListener('click', toggleFavorites);
-    
+
     // 加载已保存的收藏
     loadFavorites();
 }
@@ -297,12 +332,12 @@ function loadFavorites() {
 
 function renderFavorites(favorites) {
     const list = document.getElementById('favoritesList');
-    
+
     if (favorites.length === 0) {
         list.innerHTML = '<p class="empty-tip">暂无收藏，点击链接卡片右上角的 ☆ 添加收藏</p>';
         return;
     }
-    
+
     list.innerHTML = favorites.map((fav, index) => `
         <div class="favorite-item">
             <span>${fav.icon || '🔗'}</span>
@@ -316,13 +351,13 @@ function renderFavorites(favorites) {
 
 function addFavorite(title, url, icon) {
     const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
-    
+
     // 检查是否已存在
     if (favorites.some(f => f.url === url)) {
         showToast('已在收藏夹中');
         return;
     }
-    
+
     favorites.push({ title, url, icon });
     localStorage.setItem('favorites', JSON.stringify(favorites));
     renderFavorites(favorites);
@@ -340,16 +375,16 @@ function removeFavorite(index) {
 // 返回顶部
 function initBackToTop() {
     const btn = document.getElementById('backToTop');
-    
-    window.addEventListener('scroll', function() {
+
+    window.addEventListener('scroll', function () {
         if (window.scrollY > 300) {
             btn.classList.add('visible');
         } else {
             btn.classList.remove('visible');
         }
     });
-    
-    btn.addEventListener('click', function() {
+
+    btn.addEventListener('click', function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 }
@@ -361,7 +396,7 @@ function showToast(message) {
     if (existingToast) {
         existingToast.remove();
     }
-    
+
     const toast = document.createElement('div');
     toast.className = 'toast';
     toast.textContent = message;
@@ -378,7 +413,7 @@ function showToast(message) {
         z-index: 1000;
         animation: toastIn 0.3s ease, toastOut 0.3s ease 2s forwards;
     `;
-    
+
     // 添加动画样式
     if (!document.querySelector('#toast-styles')) {
         const style = document.createElement('style');
@@ -395,22 +430,22 @@ function showToast(message) {
         `;
         document.head.appendChild(style);
     }
-    
+
     document.body.appendChild(toast);
-    
+
     setTimeout(() => toast.remove(), 2500);
 }
 
 // 右键菜单添加收藏（为链接卡片添加）
-document.addEventListener('contextmenu', function(e) {
+document.addEventListener('contextmenu', function (e) {
     const linkCard = e.target.closest('.link-card');
     if (linkCard) {
         e.preventDefault();
-        
+
         const title = linkCard.querySelector('h4')?.textContent || '未知链接';
         const url = linkCard.href;
         const icon = linkCard.querySelector('.card-icon')?.textContent || '🔗';
-        
+
         addFavorite(title, url, icon);
     }
 });

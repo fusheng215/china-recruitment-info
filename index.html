@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,10 @@
     <meta name="description" content="一站式查询中国公务员考试、事业单位招聘、国央企招聘、教师招聘等官方信息，直达各省市官方网站">
     <meta name="keywords" content="公务员考试,事业单位招聘,国企招聘,央企招聘,教师招聘,国考,省考,特岗教师">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <!-- 背景动画 -->
     <div class="bg-animation">
@@ -47,6 +50,7 @@
                 <span class="filter-tag" data-filter="public">事业单位</span>
                 <span class="filter-tag" data-filter="soe">国央企</span>
                 <span class="filter-tag" data-filter="teacher">教师</span>
+                <span class="filter-tag" data-filter="medical">医疗卫生</span>
             </div>
         </div>
     </section>
@@ -66,14 +70,14 @@
                 <div class="stat-card">
                     <div class="stat-icon">🏛️</div>
                     <div class="stat-info">
-                        <span class="stat-number">100+</span>
+                        <span class="stat-number">200+</span>
                         <span class="stat-label">官方信息源</span>
                     </div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-icon">🔗</div>
                     <div class="stat-info">
-                        <span class="stat-number">4</span>
+                        <span class="stat-number">5</span>
                         <span class="stat-label">招聘类别</span>
                     </div>
                 </div>
@@ -104,6 +108,10 @@
                     <span class="tab-icon">📚</span>
                     <span class="tab-text">教师招聘</span>
                 </button>
+                <button class="category-tab" data-category="medical">
+                    <span class="tab-icon">🏥</span>
+                    <span class="tab-text">医疗卫生</span>
+                </button>
             </nav>
 
             <!-- 内容面板 -->
@@ -114,7 +122,7 @@
                         <h2>🏛️ 公务员考试信息</h2>
                         <p class="panel-desc">国家公务员考试、各省公务员考试、选调生招录等官方信息</p>
                     </div>
-                    
+
                     <!-- 国家级 -->
                     <div class="section-group">
                         <h3 class="section-title">
@@ -122,7 +130,8 @@
                             国家公务员考试（国考）
                         </h3>
                         <div class="link-grid">
-                            <a href="http://bm.scs.gov.cn/pp/gkweb/core/web/ui/business/home/gkhome.html" target="_blank" class="link-card featured">
+                            <a href="http://bm.scs.gov.cn/pp/gkweb/core/web/ui/business/home/gkhome.html"
+                                target="_blank" class="link-card featured">
                                 <div class="card-icon">⭐</div>
                                 <div class="card-content">
                                     <h4>国家公务员考试专题</h4>
@@ -157,7 +166,7 @@
                 <div class="panel" id="panel-public">
                     <div class="panel-header">
                         <h2>🏢 事业单位招聘</h2>
-                        <p class="panel-desc">中央及地方事业单位公开招聘信息</p>
+                        <p class="panel-desc">中央及地方事业单位、法检系统、公安系统、军队文职等公开招聘信息</p>
                     </div>
 
                     <div class="section-group">
@@ -179,6 +188,163 @@
 
                     <div class="section-group">
                         <h3 class="section-title">
+                            <span class="title-icon">⚖️</span>
+                            法检系统
+                        </h3>
+                        <div class="link-grid">
+                            <a href="https://www.court.gov.cn/" target="_blank" class="link-card featured">
+                                <div class="card-icon">⚖️</div>
+                                <div class="card-content">
+                                    <h4>最高人民法院</h4>
+                                    <p>法院系统招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.spp.gov.cn/" target="_blank" class="link-card featured">
+                                <div class="card-icon">⚖️</div>
+                                <div class="card-content">
+                                    <h4>最高人民检察院</h4>
+                                    <p>检察院系统招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="section-group">
+                        <h3 class="section-title">
+                            <span class="title-icon">🚔</span>
+                            公安系统
+                        </h3>
+                        <div class="link-grid">
+                            <a href="https://www.mps.gov.cn/" target="_blank" class="link-card featured">
+                                <div class="card-icon">🚔</div>
+                                <div class="card-content">
+                                    <h4>公安部</h4>
+                                    <p>公安部招聘信息</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://gaj.beijing.gov.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">👮</div>
+                                <div class="card-content">
+                                    <h4>北京市公安局</h4>
+                                    <p>辅警/文职招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://gaj.sh.gov.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">👮</div>
+                                <div class="card-content">
+                                    <h4>上海市公安局</h4>
+                                    <p>辅警/文职招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="section-group">
+                        <h3 class="section-title">
+                            <span class="title-icon">🎖️</span>
+                            军队文职
+                        </h3>
+                        <div class="link-grid">
+                            <a href="http://www.81rc.mil.cn/" target="_blank" class="link-card featured">
+                                <div class="card-icon">🎖️</div>
+                                <div class="card-content">
+                                    <h4>军队人才网</h4>
+                                    <p>军队文职人员招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="http://81rc.81.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">🎖️</div>
+                                <div class="card-content">
+                                    <h4>中国军网人才频道</h4>
+                                    <p>军队招聘信息</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="section-group">
+                        <h3 class="section-title">
+                            <span class="title-icon">🌾</span>
+                            基层服务项目
+                        </h3>
+                        <div class="link-grid">
+                            <a href="http://www.mohrss.gov.cn/" target="_blank" class="link-card featured">
+                                <div class="card-icon">🌾</div>
+                                <div class="card-content">
+                                    <h4>三支一扶</h4>
+                                    <p>人社部基层服务项目</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="http://xibu.youth.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">🌾</div>
+                                <div class="card-content">
+                                    <h4>西部计划</h4>
+                                    <p>大学生志愿服务西部计划</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.mca.gov.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">🏘️</div>
+                                <div class="card-content">
+                                    <h4>社区工作者</h4>
+                                    <p>民政部社区招聘信息</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="section-group">
+                        <h3 class="section-title">
+                            <span class="title-icon">🎭</span>
+                            文化系统
+                        </h3>
+                        <div class="link-grid">
+                            <a href="https://www.mct.gov.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">🎭</div>
+                                <div class="card-content">
+                                    <h4>文化和旅游部</h4>
+                                    <p>文旅系统招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="http://www.nlc.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">📚</div>
+                                <div class="card-content">
+                                    <h4>国家图书馆</h4>
+                                    <p>国图招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="http://www.chnmuseum.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">🏛️</div>
+                                <div class="card-content">
+                                    <h4>中国国家博物馆</h4>
+                                    <p>国博招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="http://www.dpm.org.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">🏯</div>
+                                <div class="card-content">
+                                    <h4>故宫博物院</h4>
+                                    <p>故宫招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="section-group">
+                        <h3 class="section-title">
                             <span class="title-icon">📍</span>
                             各省事业单位招聘
                         </h3>
@@ -192,7 +358,7 @@
                 <div class="panel" id="panel-soe">
                     <div class="panel-header">
                         <h2>🏭 国央企招聘</h2>
-                        <p class="panel-desc">中央企业、国有企业、金融机构招聘信息</p>
+                        <p class="panel-desc">中央企业、国有企业、金融机构、烟草、军工等招聘信息</p>
                     </div>
 
                     <div class="section-group">
@@ -214,6 +380,14 @@
                                 <div class="card-content">
                                     <h4>国资央企招聘平台</h4>
                                     <p>国资委官方就业平台</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="http://www.sasac.gov.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">🏢</div>
+                                <div class="card-content">
+                                    <h4>国务院国资委</h4>
+                                    <p>央企信息公开</p>
                                 </div>
                                 <span class="card-arrow">→</span>
                             </a>
@@ -266,13 +440,102 @@
                                 </div>
                                 <span class="card-arrow">→</span>
                             </a>
+                            <a href="https://talent.chnenergy.com.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">⚡</div>
+                                <div class="card-content">
+                                    <h4>国家能源集团</h4>
+                                    <p>国能招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://job.chng.com.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">⚡</div>
+                                <div class="card-content">
+                                    <h4>华能集团</h4>
+                                    <p>华能招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://hr.spic.com.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">⚡</div>
+                                <div class="card-content">
+                                    <h4>国家电投</h4>
+                                    <p>电投招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://zhaopin.cdt-ec.com/" target="_blank" class="link-card">
+                                <div class="card-icon">⚡</div>
+                                <div class="card-content">
+                                    <h4>大唐集团</h4>
+                                    <p>大唐招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.cnnc.com.cn/cnnc/300555/index.html" target="_blank" class="link-card">
+                                <div class="card-icon">☢️</div>
+                                <div class="card-content">
+                                    <h4>中核集团</h4>
+                                    <p>中核招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://hr.cgnpc.com.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">☢️</div>
+                                <div class="card-content">
+                                    <h4>中广核</h4>
+                                    <p>广核招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
                         </div>
                     </div>
 
                     <div class="section-group">
                         <h3 class="section-title">
-                            <span class="title-icon">📡</span>
-                            通信央企
+                            <span class="title-icon">�️</span>
+                            石油石化央企
+                        </h3>
+                        <div class="link-grid">
+                            <a href="https://zhaopin.cnpc.com.cn/" target="_blank" class="link-card featured">
+                                <div class="card-icon">⛽</div>
+                                <div class="card-content">
+                                    <h4>中国石油</h4>
+                                    <p>CNPC招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="http://job.sinopec.com/" target="_blank" class="link-card featured">
+                                <div class="card-icon">⛽</div>
+                                <div class="card-content">
+                                    <h4>中国石化</h4>
+                                    <p>Sinopec招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://cnooc.zhiye.com/" target="_blank" class="link-card featured">
+                                <div class="card-icon">🌊</div>
+                                <div class="card-content">
+                                    <h4>中国海油</h4>
+                                    <p>CNOOC招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.sinochem.com/job" target="_blank" class="link-card">
+                                <div class="card-icon">⚗️</div>
+                                <div class="card-content">
+                                    <h4>中国中化</h4>
+                                    <p>Sinochem招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="section-group">
+                        <h3 class="section-title">
+                            <span class="title-icon">�📡</span>
+                            通信与科技央企
                         </h3>
                         <div class="link-grid">
                             <a href="https://job.10086.cn/" target="_blank" class="link-card">
@@ -299,13 +562,37 @@
                                 </div>
                                 <span class="card-arrow">→</span>
                             </a>
+                            <a href="https://career.chinatowercom.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">📡</div>
+                                <div class="card-content">
+                                    <h4>中国铁塔</h4>
+                                    <p>铁塔招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.cetc.com.cn/zgdzkj/zpxx/index.html" target="_blank" class="link-card">
+                                <div class="card-icon">💻</div>
+                                <div class="card-content">
+                                    <h4>中国电科</h4>
+                                    <p>电科招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.cetcxl.com/" target="_blank" class="link-card">
+                                <div class="card-icon">📡</div>
+                                <div class="card-content">
+                                    <h4>中国卫通</h4>
+                                    <p>卫通招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
                         </div>
                     </div>
 
                     <div class="section-group">
                         <h3 class="section-title">
                             <span class="title-icon">🏦</span>
-                            金融国企
+                            银行金融
                         </h3>
                         <div class="link-grid">
                             <a href="https://campus.icbc.com.cn/" target="_blank" class="link-card">
@@ -340,7 +627,8 @@
                                 </div>
                                 <span class="card-arrow">→</span>
                             </a>
-                            <a href="https://www.bankcomm.com/BankCommSite/zonghang/rencaizhaopin.html" target="_blank" class="link-card">
+                            <a href="https://www.bankcomm.com/BankCommSite/zonghang/rencaizhaopin.html" target="_blank"
+                                class="link-card">
                                 <div class="card-icon">🏛️</div>
                                 <div class="card-content">
                                     <h4>交通银行</h4>
@@ -356,13 +644,350 @@
                                 </div>
                                 <span class="card-arrow">→</span>
                             </a>
+                            <a href="http://www.cdb.com.cn/rczp/" target="_blank" class="link-card">
+                                <div class="card-icon">🏦</div>
+                                <div class="card-content">
+                                    <h4>国家开发银行</h4>
+                                    <p>政策性银行</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.adbc.com.cn/n5/index.html" target="_blank" class="link-card">
+                                <div class="card-icon">🏦</div>
+                                <div class="card-content">
+                                    <h4>农业发展银行</h4>
+                                    <p>政策性银行</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="http://www.eximbank.gov.cn/rczp/index.html" target="_blank" class="link-card">
+                                <div class="card-icon">🏦</div>
+                                <div class="card-content">
+                                    <h4>进出口银行</h4>
+                                    <p>政策性银行</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="section-group">
+                        <h3 class="section-title">
+                            <span class="title-icon">🏪</span>
+                            农信社与城商行
+                        </h3>
+                        <div class="link-grid">
+                            <a href="https://www.nxrcb.com/" target="_blank" class="link-card">
+                                <div class="card-icon">🏦</div>
+                                <div class="card-content">
+                                    <h4>农村信用社</h4>
+                                    <p>各省农信社/农商行招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.bjbank.com/" target="_blank" class="link-card">
+                                <div class="card-icon">🏦</div>
+                                <div class="card-content">
+                                    <h4>北京银行</h4>
+                                    <p>城商行招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.spdb.com.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">🏦</div>
+                                <div class="card-content">
+                                    <h4>浦发银行</h4>
+                                    <p>股份制银行招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.cmbchina.com/" target="_blank" class="link-card">
+                                <div class="card-icon">🏦</div>
+                                <div class="card-content">
+                                    <h4>招商银行</h4>
+                                    <p>股份制银行招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.cib.com.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">🏦</div>
+                                <div class="card-content">
+                                    <h4>兴业银行</h4>
+                                    <p>股份制银行招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.cmbc.com.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">🏦</div>
+                                <div class="card-content">
+                                    <h4>民生银行</h4>
+                                    <p>股份制银行招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="section-group">
+                        <h3 class="section-title">
+                            <span class="title-icon">📺</span>
+                            广电与邮政
+                        </h3>
+                        <div class="link-grid">
+                            <a href="http://www.nrta.gov.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">📺</div>
+                                <div class="card-content">
+                                    <h4>国家广电总局</h4>
+                                    <p>广电系统招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.cctv.com/" target="_blank" class="link-card">
+                                <div class="card-icon">📺</div>
+                                <div class="card-content">
+                                    <h4>中央广播电视总台</h4>
+                                    <p>央视招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.chinapost.com.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">📮</div>
+                                <div class="card-content">
+                                    <h4>中国邮政集团</h4>
+                                    <p>邮政招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="http://www.xinhuanet.com/" target="_blank" class="link-card">
+                                <div class="card-icon">📰</div>
+                                <div class="card-content">
+                                    <h4>新华社</h4>
+                                    <p>新华社招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="http://www.people.com.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">📰</div>
+                                <div class="card-content">
+                                    <h4>人民日报社</h4>
+                                    <p>人民日报招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="section-group">
+                        <h3 class="section-title">
+                            <span class="title-icon">💻</span>
+                            国有科技企业
+                        </h3>
+                        <div class="link-grid">
+                            <a href="https://www.chinasoft.com/" target="_blank" class="link-card">
+                                <div class="card-icon">💻</div>
+                                <div class="card-content">
+                                    <h4>中软国际</h4>
+                                    <p>中软招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.zte.com.cn/china/about/job.html" target="_blank" class="link-card">
+                                <div class="card-icon">📡</div>
+                                <div class="card-content">
+                                    <h4>中兴通讯</h4>
+                                    <p>中兴招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.hikvision.com/cn/about/job/" target="_blank" class="link-card">
+                                <div class="card-icon">📹</div>
+                                <div class="card-content">
+                                    <h4>海康威视</h4>
+                                    <p>海康招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.inspur.com/lcjtww/445089/447064/index.html" target="_blank"
+                                class="link-card">
+                                <div class="card-icon">🖥️</div>
+                                <div class="card-content">
+                                    <h4>浪潮集团</h4>
+                                    <p>浪潮招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.dawning.com/about/recruit/" target="_blank" class="link-card">
+                                <div class="card-icon">🖥️</div>
+                                <div class="card-content">
+                                    <h4>中科曙光</h4>
+                                    <p>曙光招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.dcits.com/recruit/campus/" target="_blank" class="link-card">
+                                <div class="card-icon">💻</div>
+                                <div class="card-content">
+                                    <h4>神州数码</h4>
+                                    <p>神州招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="section-group">
+                        <h3 class="section-title">
+                            <span class="title-icon">📊</span>
+                            保险与证券
+                        </h3>
+                        <div class="link-grid">
+                            <a href="https://job.picc.com/" target="_blank" class="link-card">
+                                <div class="card-icon">🛡️</div>
+                                <div class="card-content">
+                                    <h4>中国人保</h4>
+                                    <p>PICC招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://hr.chinalife.com.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">🛡️</div>
+                                <div class="card-content">
+                                    <h4>中国人寿</h4>
+                                    <p>国寿招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://job.cpic.com.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">🛡️</div>
+                                <div class="card-content">
+                                    <h4>太平洋保险</h4>
+                                    <p>CPIC招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://zhaopin.sinosure.com.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">🛡️</div>
+                                <div class="card-content">
+                                    <h4>中国信保</h4>
+                                    <p>信保招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://hr.citics.com/" target="_blank" class="link-card">
+                                <div class="card-icon">📈</div>
+                                <div class="card-content">
+                                    <h4>中信证券</h4>
+                                    <p>中信招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://zhaopin.cic.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">💰</div>
+                                <div class="card-content">
+                                    <h4>中投公司</h4>
+                                    <p>中投招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="section-group">
+                        <h3 class="section-title">
+                            <span class="title-icon">🚬</span>
+                            烟草系统
+                        </h3>
+                        <div class="link-grid">
+                            <a href="http://www.tobacco.gov.cn/" target="_blank" class="link-card featured">
+                                <div class="card-icon">🏛️</div>
+                                <div class="card-content">
+                                    <h4>国家烟草专卖局</h4>
+                                    <p>烟草系统招聘信息</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.hongta.com/category/id/12.html" target="_blank" class="link-card">
+                                <div class="card-icon">🚬</div>
+                                <div class="card-content">
+                                    <h4>红塔集团</h4>
+                                    <p>红塔招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="section-group">
+                        <h3 class="section-title">
+                            <span class="title-icon">🛡️</span>
+                            军工央企
+                        </h3>
+                        <div class="link-grid">
+                            <a href="http://www.avic.com/rczp/index.shtml" target="_blank" class="link-card">
+                                <div class="card-icon">✈️</div>
+                                <div class="card-content">
+                                    <h4>中国航空工业</h4>
+                                    <p>航空工业招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.spacechina.com/n25/n2014823/index.html" target="_blank"
+                                class="link-card">
+                                <div class="card-icon">🚀</div>
+                                <div class="card-content">
+                                    <h4>中国航天科技</h4>
+                                    <p>航天科技招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="http://www.casic.cn/n12377419/index.html" target="_blank" class="link-card">
+                                <div class="card-icon">🚀</div>
+                                <div class="card-content">
+                                    <h4>中国航天科工</h4>
+                                    <p>航天科工招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="http://www.cssc.net.cn/n4/index.html" target="_blank" class="link-card">
+                                <div class="card-icon">🚢</div>
+                                <div class="card-content">
+                                    <h4>中国船舶集团</h4>
+                                    <p>船舶招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="http://www.norincogroup.com.cn/col/col5801/index.html" target="_blank"
+                                class="link-card">
+                                <div class="card-icon">🔫</div>
+                                <div class="card-content">
+                                    <h4>中国兵器工业</h4>
+                                    <p>北方工业招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="http://www.csgc.com.cn/1702.html" target="_blank" class="link-card">
+                                <div class="card-icon">🔫</div>
+                                <div class="card-content">
+                                    <h4>中国兵器装备</h4>
+                                    <p>南方工业招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://zhaopin.aero-engine.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">🔧</div>
+                                <div class="card-content">
+                                    <h4>中国航发</h4>
+                                    <p>航发招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
                         </div>
                     </div>
 
                     <div class="section-group">
                         <h3 class="section-title">
                             <span class="title-icon">🏗️</span>
-                            建筑央企
+                            建筑与工程央企
                         </h3>
                         <div class="link-grid">
                             <a href="https://job.cscec.com/" target="_blank" class="link-card">
@@ -397,6 +1022,38 @@
                                 </div>
                                 <span class="card-arrow">→</span>
                             </a>
+                            <a href="https://job.powerchina.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">💧</div>
+                                <div class="card-content">
+                                    <h4>中国电建</h4>
+                                    <p>电建招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://job.ceec.net.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">⚡</div>
+                                <div class="card-content">
+                                    <h4>中国能建</h4>
+                                    <p>能建招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://job.mcc.com.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">🏭</div>
+                                <div class="card-content">
+                                    <h4>中国中冶</h4>
+                                    <p>中冶招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://job.cec-ceda.org.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">🏗️</div>
+                                <div class="card-content">
+                                    <h4>中国化学工程</h4>
+                                    <p>化学工程招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
                         </div>
                     </div>
 
@@ -406,11 +1063,11 @@
                             交通运输央企
                         </h3>
                         <div class="link-grid">
-                            <a href="https://www.12306.cn/mormhweb/zxdt/zhaopin/" target="_blank" class="link-card">
+                            <a href="http://rczp.china-railway.com.cn/" target="_blank" class="link-card featured">
                                 <div class="card-icon">🚄</div>
                                 <div class="card-content">
-                                    <h4>中国铁路</h4>
-                                    <p>国铁集团招聘</p>
+                                    <h4>中国铁路人才招聘网</h4>
+                                    <p>各铁路局招聘报名平台</p>
                                 </div>
                                 <span class="card-arrow">→</span>
                             </a>
@@ -419,6 +1076,14 @@
                                 <div class="card-content">
                                     <h4>中远海运</h4>
                                     <p>COSCO招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://zhaopin.airchina.com.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">✈️</div>
+                                <div class="card-content">
+                                    <h4>中国国航</h4>
+                                    <p>Air China招聘</p>
                                 </div>
                                 <span class="card-arrow">→</span>
                             </a>
@@ -438,11 +1103,118 @@
                                 </div>
                                 <span class="card-arrow">→</span>
                             </a>
-                            <a href="https://zhaopin.airchina.com.cn/" target="_blank" class="link-card">
-                                <div class="card-icon">✈️</div>
+                            <a href="https://job.cmhk.com/" target="_blank" class="link-card">
+                                <div class="card-icon">🚢</div>
                                 <div class="card-content">
-                                    <h4>中国国航</h4>
-                                    <p>国航招聘</p>
+                                    <h4>招商局集团</h4>
+                                    <p>招商招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="section-group">
+                        <h3 class="section-title">
+                            <span class="title-icon">🏭</span>
+                            制造与资源央企
+                        </h3>
+                        <div class="link-grid">
+                            <a href="https://job.baosteel.com/" target="_blank" class="link-card">
+                                <div class="card-icon">🔩</div>
+                                <div class="card-content">
+                                    <h4>中国宝武钢铁</h4>
+                                    <p>宝武招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="http://www.chalco.com.cn/chalco/rczl/index.htm" target="_blank" class="link-card">
+                                <div class="card-icon">🔩</div>
+                                <div class="card-content">
+                                    <h4>中铝集团</h4>
+                                    <p>中铝招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://job.minmetals.com.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">⛏️</div>
+                                <div class="card-content">
+                                    <h4>中国五矿</h4>
+                                    <p>五矿招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://zhaopin.cofco.com/" target="_blank" class="link-card">
+                                <div class="card-icon">🌾</div>
+                                <div class="card-content">
+                                    <h4>中粮集团</h4>
+                                    <p>中粮招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="http://job.sinochem.com/" target="_blank" class="link-card">
+                                <div class="card-icon">🧪</div>
+                                <div class="card-content">
+                                    <h4>中国中化</h4>
+                                    <p>中化招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://job.faw.com.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">🚗</div>
+                                <div class="card-content">
+                                    <h4>中国一汽</h4>
+                                    <p>一汽招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://zhaopin.dfmc.com.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">🚗</div>
+                                <div class="card-content">
+                                    <h4>东风汽车</h4>
+                                    <p>东风招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="http://job.sinomach.com.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">⚙️</div>
+                                <div class="card-content">
+                                    <h4>国机集团</h4>
+                                    <p>国机招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="section-group">
+                        <h3 class="section-title">
+                            <span class="title-icon">🔬</span>
+                            科研院所
+                        </h3>
+                        <div class="link-grid">
+                            <a href="https://job.chinesehrc.com/pages/cjob/" target="_blank" class="link-card featured">
+                                <div class="card-icon">🔬</div>
+                                <div class="card-content">
+                                    <h4>中国科学院招聘</h4>
+                                    <p>中科院各研究所</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://job.sciencenet.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">🔬</div>
+                                <div class="card-content">
+                                    <h4>科学网人才</h4>
+                                    <p>科研院所招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="http://www.cae.cn/cae/html/main/col300/column_300_1.html" target="_blank"
+                                class="link-card">
+                                <div class="card-icon">🏛️</div>
+                                <div class="card-content">
+                                    <h4>中国工程院</h4>
+                                    <p>工程院招聘</p>
                                 </div>
                                 <span class="card-arrow">→</span>
                             </a>
@@ -542,6 +1314,191 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- 医疗卫生 -->
+                <div class="panel" id="panel-medical">
+                    <div class="panel-header">
+                        <h2>🏥 医疗卫生招聘</h2>
+                        <p class="panel-desc">医院、卫生系统、护理、医技等医疗卫生人才招聘</p>
+                    </div>
+
+                    <div class="section-group">
+                        <h3 class="section-title">
+                            <span class="title-icon">🏛️</span>
+                            国家级医疗卫生机构
+                        </h3>
+                        <div class="link-grid">
+                            <a href="http://www.nhc.gov.cn/" target="_blank" class="link-card featured">
+                                <div class="card-icon">⭐</div>
+                                <div class="card-content">
+                                    <h4>国家卫生健康委员会</h4>
+                                    <p>卫健委官网招聘信息</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.chinacdc.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">🔬</div>
+                                <div class="card-content">
+                                    <h4>中国疾病预防控制中心</h4>
+                                    <p>CDC招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="http://www.cams.ac.cn/rcjy/zpxx/" target="_blank" class="link-card">
+                                <div class="card-icon">🔬</div>
+                                <div class="card-content">
+                                    <h4>中国医学科学院</h4>
+                                    <p>医科院招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="section-group">
+                        <h3 class="section-title">
+                            <span class="title-icon">🏥</span>
+                            知名医院招聘
+                        </h3>
+                        <div class="link-grid">
+                            <a href="https://www.pumch.cn/rlzy.html" target="_blank" class="link-card">
+                                <div class="card-icon">🏥</div>
+                                <div class="card-content">
+                                    <h4>北京协和医院</h4>
+                                    <p>协和招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.301hospital.com.cn/Html/List/list_5.html" target="_blank"
+                                class="link-card">
+                                <div class="card-icon">🏥</div>
+                                <div class="card-content">
+                                    <h4>解放军总医院（301）</h4>
+                                    <p>301医院招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.pkufh.com/Html/News/Articles/Index.html" target="_blank"
+                                class="link-card">
+                                <div class="card-icon">🏥</div>
+                                <div class="card-content">
+                                    <h4>北大第一医院</h4>
+                                    <p>北大医院招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.shsmu.edu.cn/rsc/rczp/zpgg.htm" target="_blank" class="link-card">
+                                <div class="card-icon">🏥</div>
+                                <div class="card-content">
+                                    <h4>上海交大医学院附属医院</h4>
+                                    <p>上海医院招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.wchscu.cn/public/department/rczp.html" target="_blank"
+                                class="link-card">
+                                <div class="card-icon">🏥</div>
+                                <div class="card-content">
+                                    <h4>四川大学华西医院</h4>
+                                    <p>华西招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.zju.edu.cn/rsc/main.htm" target="_blank" class="link-card">
+                                <div class="card-icon">🏥</div>
+                                <div class="card-content">
+                                    <h4>浙大附属医院</h4>
+                                    <p>浙医招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="section-group">
+                        <h3 class="section-title">
+                            <span class="title-icon">📋</span>
+                            医疗人才招聘平台
+                        </h3>
+                        <div class="link-grid">
+                            <a href="https://www.yixuezp.com/" target="_blank" class="link-card featured">
+                                <div class="card-icon">🩺</div>
+                                <div class="card-content">
+                                    <h4>医学人才网</h4>
+                                    <p>全国医疗卫生招聘信息</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.healthjob.cn/" target="_blank" class="link-card">
+                                <div class="card-icon">👨‍⚕️</div>
+                                <div class="card-content">
+                                    <h4>卫生人才网</h4>
+                                    <p>卫生系统招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.21wecan.com/" target="_blank" class="link-card">
+                                <div class="card-icon">📝</div>
+                                <div class="card-content">
+                                    <h4>中国卫生人才网</h4>
+                                    <p>卫生专业技术资格考试</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.dxyrc.com/" target="_blank" class="link-card">
+                                <div class="card-icon">💼</div>
+                                <div class="card-content">
+                                    <h4>丁香人才</h4>
+                                    <p>医药生命科学招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="section-group">
+                        <h3 class="section-title">
+                            <span class="title-icon">📍</span>
+                            各省卫生健康委
+                        </h3>
+                        <div class="province-grid" id="medicalProvinceGrid">
+                            <!-- 由JS动态生成 -->
+                        </div>
+                    </div>
+
+                    <div class="section-group">
+                        <h3 class="section-title">
+                            <span class="title-icon">💊</span>
+                            医药企业
+                        </h3>
+                        <div class="link-grid">
+                            <a href="https://www.sinopharm.com/1168.html" target="_blank" class="link-card">
+                                <div class="card-icon">💊</div>
+                                <div class="card-content">
+                                    <h4>国药集团</h4>
+                                    <p>国药招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://www.hengrui.com/join.html" target="_blank" class="link-card">
+                                <div class="card-icon">💊</div>
+                                <div class="card-content">
+                                    <h4>恒瑞医药</h4>
+                                    <p>恒瑞招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                            <a href="https://job.fosunpharma.com/" target="_blank" class="link-card">
+                                <div class="card-icon">💊</div>
+                                <div class="card-content">
+                                    <h4>复星医药</h4>
+                                    <p>复星招聘</p>
+                                </div>
+                                <span class="card-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -583,4 +1540,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
